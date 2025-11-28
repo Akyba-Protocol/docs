@@ -39,6 +39,9 @@ The parameters are:
 | Distribution Comission | Optional commission for someone to execute the distribute action |
 | Days per Round | The number of days per round. Typically, it's 30 days, but it can be shorter if needed (e.g., 14 days for bi-weekly distribution) |
 
+> [!IMPORTANT]  
+> You must sign all 4 pop-ups. The first one is to initialize the group, the rest are to deploy scripts uniquely associated with your group and membership.
+
 > [!WARNING]
 > Once submitted, the parameter values are immutable. There's no editting any value, this will give confidence for people to join the group knowing that the parameter values cannot be manipulated by the group creator, or the platform, after they join
 
@@ -105,6 +108,9 @@ Join action is to join a tontine group. When someone joins a group, they will ge
 ![image](./assets/images/2%20-%20Join.png)
 
 The Group ID is manually filled in the mock off-chain app, but it should be automatically filled in the real prod app through some form of group selector.
+
+> [!IMPORTANT]  
+> You must sign all 2 pop-ups
 
 > [!NOTE]
 > Group ID is the Policy ID of the minted STT
@@ -334,7 +340,8 @@ We can batch the [Contribute](#contribute) actions such that we execute a single
 > [!NOTE]
 > Contributor IDs are the Policy IDs of the user tokens
 
-> [!TIP] > `Total Contribution Amount` = `The Number of Contributor IDs` x `Contribution Amount per Round`
+> [!TIP]
+> Total Contribution Amount = The Number of Contributor IDs x Contribution Amount per Round
 
 - Who is this action intended for? Participant, or Source of Funds
 - When should it be executed? After Start, and also After every Distribution phase.
