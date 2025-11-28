@@ -1,4 +1,4 @@
-# Akyba: ASCA v1.0.1
+# Akyba: ASCA v1
 
 There are 14 actions:
 
